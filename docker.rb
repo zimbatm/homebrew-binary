@@ -1,14 +1,14 @@
 require 'formula'
 
 class Docker < Formula
-  homepage 'http://www.docker.io/'
+  homepage 'https://www.docker.io/'
 
   if MacOS.prefer_64_bit?
-    url 'https://get.docker.io/builds/Darwin/x86_64/docker-0.7.3.tgz'
-    sha1 '7c3f07213010c414fe60b88d58d89181b7a7eed1'
+    url 'https://get.docker.io/builds/Darwin/x86_64/docker-0.7.4.tgz'
+    sha1 '4503c6f762cdc8310e3bb43babbb7f90b45697f7'
   else
-    url 'https://get.docker.io/builds/Darwin/i386/docker-0.7.3.tgz'
-    sha1 '1f0449f70c3d11f2cd326ca380af31e35928dca2'
+    url 'https://get.docker.io/builds/Darwin/i386/docker-0.7.4.tgz'
+    sha1 'b21bfc0eafddcadd40218c138ec4a4272adc7e93'
   end
 
   depends_on :arch => :intel
