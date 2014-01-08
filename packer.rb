@@ -12,6 +12,8 @@ class Packer < Formula
     sha256 'a0d8db4944d0024af05e256357cad014662eddefef67b1b2fe8a5060659a5be2'
   end
 
+  depends_on :arch => :intel
+
   def install
     bin.install Dir['*']
   end
