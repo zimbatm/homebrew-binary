@@ -1,22 +1,24 @@
 require 'formula'
 
 class Exercism < Formula
+  VERSION = '1.5.1'.freeze
+
   homepage 'http://cli.exercism.io'
-  version '1.5.0'
+  version VERSION
 
   if Hardware.is_64_bit?
-    url 'https://github.com/exercism/cli/releases/download/v1.5.0/exercism-darwin-amd64.tgz'
-    sha1 '9c1dc0104c0493799e8482eb4fbdad22ad53728a'
+    url "https://github.com/exercism/cli/releases/download/v#{VERSION}/exercism-darwin-amd64.tgz"
+    sha1 '4d19db279ae6752b6032b2a9e96cfc53981eff8f'
   else
-    url 'https://github.com/exercism/cli/releases/download/v1.5.0/exercism-darwin-386.tgz'
-    sha1 '13f2a135f1f3e41587066bf12150b68f4f924886'
+    url "https://github.com/exercism/cli/releases/download/v#{VERSION}/exercism-darwin-386.tgz"
+    sha1 'cbe9697c1133e854832d620d52970fb3d198ba4f'
   end
 
   def install
-    bin.install "exercism"
+    bin.install 'exercism'
   end
 
   test do
-    assert_equal 'exercism version 1.5.0', `#{bin}/exercism -v`.strip
+    assert_equal "exercism version #{VERSION}", `#{bin}/exercism -v`.strip
   end
 end
