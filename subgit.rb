@@ -10,4 +10,10 @@ class Subgit < Formula
     bin.install 'bin/subgit'
     libexec.install Dir['lib/*']
   end
+
+  def caveats; <<-EOS
+    To use SubGit, you must agree to the SubGit licensing agreement:
+      http://subgit.com/license.html
+    EOS
+  end
 end
