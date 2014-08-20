@@ -4,7 +4,6 @@ class Ddptools < Formula
   homepage 'http://ddp.andreasruge.de'
   url 'http://ddp.andreasruge.de/dist/ddptools-0.8.7a-osx.tar.gz'
   sha1 'ff062d302d55ee2880b957f6e802b0b503d3ead9'
-  version '0.8.7a'
 
   def install
     bin.install 'ddpinfo', 'cue2ddp', 'cdtinfo'
