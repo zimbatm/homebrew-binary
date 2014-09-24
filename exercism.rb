@@ -2,14 +2,14 @@ require 'formula'
 
 class Exercism < Formula
   homepage 'http://cli.exercism.io'
-  version '1.7.0'
+  version '1.7.2'
 
   if Hardware.is_64_bit?
-    url "https://github.com/exercism/cli/releases/download/v1.7.0/exercism-darwin-amd64.tgz"
-    sha1 '60fdf5a6a83074e59935561fdf23cbf1adad68ef'
+    url "https://github.com/exercism/cli/releases/download/v1.7.2/exercism-mac-64bit.tgz"
+    sha1 '5caa8f95fb50316df671c1c792cbcf7bc91297f2'
   else
-    url "https://github.com/exercism/cli/releases/download/v1.7.0/exercism-darwin-386.tgz"
-    sha1 '11d310b9acd0aa85151d4ec2badf26a9128dcf18'
+    url "https://github.com/exercism/cli/releases/download/v1.7.2/exercism-mac-32bit.tgz"
+    sha1 'cbe9697c1133e854832d620d52970fb3d198ba4f'
   end
 
   def install
