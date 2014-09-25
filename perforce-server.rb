@@ -1,20 +1,19 @@
-require 'formula'
+require "formula"
 
 class PerforceServer < Formula
-  homepage 'http://www.perforce.com/'
+  homepage "http://www.perforce.com/"
+  version "2014.1.933132"
 
   if MacOS.prefer_64_bit?
-    url 'http://filehost.perforce.com/perforce/r13.3/bin.darwin90x86_64/p4d'
-    version '2013.3.784164-x86_64'
-    sha1 '78f2bfe973a74703952057ae73e40b13b704d7b3'
+    url "http://filehost.perforce.com/perforce/r14.1/bin.darwin90x86_64/p4d"
+    sha256 "c7042e7e9872192dfa217a39a35b1e1443cd3ff50e9814e964d7c3a9fdf78e1b"
   else
-    url 'http://filehost.perforce.com/perforce/r13.3/bin.darwin90x86/p4d'
-    version '2013.3.784164-x86'
-    sha1 '44bae9179e3849fff6e51983cbf5c0fff7bcb771'
+    url "http://filehost.perforce.com/perforce/r14.1/bin.darwin90x86/p4d"
+    sha256 "c504598a19994c49d16b07507e384b327676dd612ae43f4faa16410e83dc091a"
   end
 
   def install
-    bin.install 'p4d'
+    bin.install "p4d"
     (var+"p4root").mkpath
   end
 
@@ -27,7 +26,7 @@ class PerforceServer < Formula
       <string>#{plist_name}</string>
       <key>ProgramArguments</key>
       <array>
-        <string>#{opt_prefix}/bin/p4d</string>
+        <string>#{opt_bin}/p4d</string>
         <string>-p</string>
         <string>1666</string>
         <string>-r</string>

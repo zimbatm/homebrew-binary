@@ -1,20 +1,19 @@
-require 'formula'
+require "formula"
 
 class PerforceProxy < Formula
-  homepage 'http://www.perforce.com/'
+  homepage "http://www.perforce.com/"
+  version "2014.1.895936"
 
   if MacOS.prefer_64_bit?
-    url 'http://filehost.perforce.com/perforce/r12.2/bin.darwin90x86_64/p4p'
-    version '2012.2.631250-x86_64'
-    sha1 '573fc8cc97e6705e93b9a3c54b46ce832d970850'
+    url "http://filehost.perforce.com/perforce/r14.1/bin.darwin90x86_64/p4p"
+    sha256 "75650424b9dd71686ab5723494d931a426ccc186defdc0c2ba187b8380782d60"
   else
-    url 'http://filehost.perforce.com/perforce/r12.2/bin.darwin90x86/p4p'
-    version '2012.2.631250-x86'
-    sha1 '20ad474618670fdeb45ca23fe450162bb2b85c3c'
+    url "http://filehost.perforce.com/perforce/r14.1/bin.darwin90x86/p4p"
+    sha256 "b3f5b2b248eadbab36197ffb5ab21de6058344c818b970a63a07753fe7466f3e"
   end
 
   def install
-    sbin.install 'p4p'
+    bin.install "p4p"
     (var+"p4p").mkpath
   end
 
@@ -37,7 +36,7 @@ class PerforceProxy < Formula
       <string>#{plist_name}</string>
       <key>ProgramArguments</key>
       <array>
-        <string>#{opt_prefix}/sbin/p4p</string>
+        <string>#{opt_bin}/p4p</string>
         <string>-p</string>
         <string>1666</string>
         <string>-r</string>
