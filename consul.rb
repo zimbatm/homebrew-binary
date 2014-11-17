@@ -2,9 +2,9 @@ require "formula"
 
 class Consul < Formula
   homepage "http://www.consul.io"
-  url "https://dl.bintray.com/mitchellh/consul/0.4.0_darwin_amd64.zip"
-  sha256 "87a1b0f37e773d92c939ca7dd6a50985acc4fb4aaec31384756ef896aef4035b"
-  version "0.4.0"
+  url "https://dl.bintray.com/mitchellh/consul/0.4.1_darwin_amd64.zip"
+  sha256 "957fe9ba27bbaf99539cd534db8ac8ec4c9fa1c6b3b4675d0c0eb3a7fbfb646c"
+  version "0.4.1"
 
   depends_on :arch => :x86_64
 
