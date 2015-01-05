@@ -2,14 +2,14 @@ require "formula"
 
 class PerforceServer < Formula
   homepage "http://www.perforce.com/"
-  version "2014.2.962050"
+  version "2014.2.978861"
 
   if MacOS.prefer_64_bit?
     url "http://filehost.perforce.com/perforce/r14.2/bin.darwin90x86_64/p4d"
-    sha256 "81cb0362c56db51f6859744fe1bef89003d98bf63f611d3343a7a6778e88f298"
+    sha256 "e8700057b05e15f69f5892ee4136b4ae3ea4ab86a06f3f739c8c5562d90ea10f"
   else
     url "http://filehost.perforce.com/perforce/r14.2/bin.darwin90x86/p4d"
-    sha256 "6d2ed5afc26ab5e893af2a9f97b2a087ed52288aca6e5e1d63eac6b723c209f4"
+    sha256 "be2228b6b98acaba07a28a17ad21f3bdd6c9943f4b110b20ab5415021d0c54ee"
   end
 
   def install
