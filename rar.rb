@@ -2,8 +2,8 @@ require 'formula'
 
 class Rar < Formula
   homepage 'http://www.rarlab.com'
-  url 'http://www.rarlab.com/rar/rarosx-5.2.0.tar.gz'
-  sha1 '299942f885207bc2005a2dd35c881b13a64343ec'
+  url 'http://www.rarlab.com/rar/rarosx-5.2.1.tar.gz'
+  sha1 'ca5db7eb2797b47aff7f6e2d583aed4cddf235c8'
 
   resource 'man' do
     url 'http://manpages.ubuntu.com/manpages.gz/trusty/man1/rar.1.gz'
