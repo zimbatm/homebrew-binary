@@ -17,6 +17,6 @@ class Exercism < Formula
   end
 
   test do
-    assert_equal "exercism version #{version}", `#{bin}/exercism -v`.strip
+    assert_equal "exercism version #{version}", `#{bin}/exercism --version`.strip
   end
 end
