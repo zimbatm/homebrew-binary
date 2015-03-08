@@ -1,11 +1,11 @@
 # Find downloads at: https://helpx.adobe.com/air/kb/archived-air-sdk-version.html
-class AdobeAirSdk < Formula
+class AdobeAirSdkFlex < Formula
   homepage "https://www.adobe.com/devnet/air/air-sdk-download.html"
-  url "http://airdownload.adobe.com/air/mac/download/16.0/AIRSDK_Compiler.tbz2"
-  sha1 "5ed2481de822e7f557db33c1bbff9b30e7df4735"
+  url "http://airdownload.adobe.com/air/mac/download/16.0/AdobeAIRSDK.tbz2"
+  sha1 "3feaadf534f5f186286eb33cb4461d7e78cdb91d"
   version "16.0.0.292"
 
-  conflicts_with "adobe-air-sdk-flex"
+  conflicts_with "adobe-air-sdk"
 
   def install
     rm_f Dir["bin/*.bat"]
