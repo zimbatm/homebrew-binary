@@ -2,7 +2,7 @@
 class AdobeAirSdkFlex < Formula
   homepage "https://www.adobe.com/devnet/air/air-sdk-download.html"
   url "http://airdownload.adobe.com/air/mac/download/17.0/AdobeAIRSDK.tbz2"
-  sha1 "f27b1d9dd70aab2e7b25bb7187286ad1f893bd90"
+  sha1 "1ad00b050944291b40763df3e04185d26f8a94a0"
   version "17.0.0.124"
 
   conflicts_with "adobe-air-sdk"
